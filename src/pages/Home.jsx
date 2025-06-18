@@ -6,6 +6,7 @@ import AboutMe from "../components/AboutMe.jsx";
 import Skills from "../components/Skills.jsx";
 import Projects from "../components/Projects.jsx";
 import Contacts from "../components/Contacts.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
         
       </main>
       {/* footer */}
+      <Footer/>
     </div>
   );
 };
