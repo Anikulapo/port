@@ -5,6 +5,7 @@ import Hero from "../components/Hero.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import Skills from "../components/Skills.jsx";
 import Projects from "../components/Projects.jsx";
+import Contacts from "../components/Contacts.jsx";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <AboutMe/>
         <Skills/>
         <Projects/>
+        <Contacts/>
         
       </main>
       {/* footer */}
