@@ -1,6 +1,6 @@
 import ThemeToggle from "../components/ThemeToggle.jsx";
 import StarBackground from "../components/Starbackground.jsx";
-import Header from "../components/header.jsx";
+import Header from "../components/Header.jsx";
 import Hero from "../components/Hero.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import Skills from "../components/Skills.jsx";

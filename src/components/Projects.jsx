@@ -41,7 +41,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           My <span className="text-primary">Projects</span>
         </h2>
         <p className="text-center mb-12 max-w-2xl mx-auto text-muted-foreground ">
@@ -88,7 +88,7 @@ const Projects = () => {
                       absolute bottom-5 right-5
                       "
                     >
-                      <ExternalLink  size={20}/>
+                      <ExternalLink size={20} />
                     </a>
                   </div>
                 </div>
@@ -96,10 +96,14 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        <div className="text-center mt-12" >
-            <a href="https://github.com/Anikulapo" className="cosmic-button w-fit flex items-center mx-auto gap-2" target="_blank" >
-                Check My Github <ArrowRight size={16}/>
-            </a>
+        <div className="text-center mt-12">
+          <a
+            href="https://github.com/Anikulapo"
+            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            target="_blank"
+          >
+            Check My Github <ArrowRight size={16} />
+          </a>
         </div>
       </div>
     </section>
