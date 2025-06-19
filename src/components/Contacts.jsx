@@ -84,9 +84,6 @@ const Contacts = () => {
                   <a href="https://x.com/Greatalash1" target="_blank">
                     <Twitter />
                   </a>
-                  <a href="" target="_blank">
-                    <Instagram />
-                  </a>
                 </div>
               </div>
             </div>
