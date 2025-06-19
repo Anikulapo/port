@@ -7,23 +7,9 @@ import {
   Instagram,
   Send
 } from "lucide-react";
-import { useState } from "react";
-import toast from "react-hot-toast";
 
 const Contacts = () => {
-  const [submitting, setSubmitting] = useState(false)
-  const handleSubmit = (e)=>{
-    e.preventDefault()
-    
-    setSubmitting(true)
 
-    setTimeout(() => {
-      toast.success("Your Message has been sent")
-      setSubmitting(false)
-    },1500)
-
-    
-  }
 
   return (
     <section id="contact" className="py-24 px-4 bg-secondary/30">
@@ -31,18 +17,18 @@ const Contacts = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Get In <span className="text-primary">Touch</span>
         </h2>
-        <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-muted-foreground text-center mb-7 max-w-2xl mx-auto">
           I'm always open to discussing new projects, creative ideas, or
           opportunities to be part of your vision. Whether you have a question,
           want to collaborate, or just want to say hi, feel free to reach out!
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="space-y-8 ">
+        <div className="grid grid-cols-1 gap-12">
+          <div className="space-y-8 flex flex-col justify-center items-center ">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-            <div className="space-y-6 justify-center">
+            <div className="space-y-6 justify-center items-center flex flex-col">
               {/* Email Contact */}
-              <div className="flex items-start space-x-4">
+              <div className="flex   items-start justify-start space-x-4 w-sm px-15">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
@@ -59,7 +45,7 @@ const Contacts = () => {
               </div>
 
               {/* Telephone Number */}
-              <div className="flex items-start space-x-4">
+              <div className="flex   items-start justify-start space-x-4 w-sm px-15">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
@@ -76,7 +62,7 @@ const Contacts = () => {
               </div>
 
               {/* Location */}
-              <div className="flex items-start space-x-4">
+              <div className="flex   items-start justify-start space-x-4 w-sm px-15">
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
@@ -91,11 +77,11 @@ const Contacts = () => {
 
               <div className="pt-8">
                 <h4>Connect With Me</h4>
-                <div className="flex space-x-4 justify-center">
-                  <a href="" target="_blank">
+                <div className="flex space-x-4 justify-center pt-4">
+                  <a href="https://www.linkedin.com/in/oluwatobi-alasoadura-699aa21b6/" target="_blank">
                     <Linkedin />
                   </a>
-                  <a href="" target="_blank">
+                  <a href="https://x.com/Greatalash1" target="_blank">
                     <Twitter />
                   </a>
                   <a href="" target="_blank">
@@ -104,68 +90,15 @@ const Contacts = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="bg-card p-8 rounded-lg shadow-xs">
-            <h3 className="text-2xl font-semibold mb-6">Send Message</h3>
-
-            <form 
-            onSubmit={handleSubmit}
-            action="" className="space-y-6">
-              <div>
-                <label htmlFor="name" className="text-sm block text-left">Your Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="w-full px-4 py-3 mt-1 rounded-md border border-input
-                   bg-background focus:outline-hidden focus:ring-2
-                   focus:ring-primary "
-                   placeholder="John Doe..."
-                />
-              </div>
 
 
-
-              <div>
-                <label htmlFor="email" className="text-sm block text-left">Your Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full px-4 py-3 mt-1 rounded-md border border-input
-                   bg-background focus:outline-hidden focus:ring-2
-                   focus:ring-primary "
-                   placeholder="example@email.com..."
-                />
-              </div>
-
-
-              <div>
-                <label htmlFor="message" className="text-sm block text-left">Your Message:</label>
-                <textarea
-                  type="text"
-                  id="message"
-                  name="message"
-                  required
-                  className="w-full px-4 py-3 mt-1 rounded-md border border-input
-                   bg-background focus:outline-hidden focus:ring-2
-                   focus:ring-primary resize-none "
-                   placeholder="Hello, I'd like to talk about..."
-                />
-              </div>
-
-
-              <button
-              type="submit"
-              className=" cosmic-button w-full flex items-center justify-center gap-2">
-                  {submitting? "Sending....." :"Send Message"}
-                  <Send size={16}/>
-
+            <div className="space-y-6 w-full flex justify-center items-center mt-6">
+              <button className=" cosmic-button px-10 py-4 transition-colors duration-300 flex items-center justify-center cursor-pointer">
+                <a href="mailto:tobialassoadura200@gmail.com">Let's Get In Touch</a>
               </button>
-            </form>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

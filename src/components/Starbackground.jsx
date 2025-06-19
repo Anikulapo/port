@@ -1,8 +1,16 @@
 import { useEffect, useState } from "react";
 
+
+import { useTheme } from "../context/ThemeContext";
+
+
+
+
 const StarBackground = () => {
   const [stars, setStars] = useState([]);
   const [meteors, setMeteors] = useState([]);
+  const { isDarkMode } = useTheme();
+
 
   const generateStars = () => {
     const numb = Math.floor(window.innerWidth * window.innerHeight) / 4000;
@@ -56,7 +64,8 @@ const StarBackground = () => {
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {stars.map((star) => (
+      {isDarkMode &&
+      stars.map((star) => (
         <div
           key={star.id}
           className="star animate-pulse-subtle"
@@ -73,21 +82,24 @@ const StarBackground = () => {
       ))}
 
 
-      {meteors.map((meteor) => (
-        <div
-          key={meteor.id}
-          className="meteor animate-meteor"
-          style={{
-            width: meteor.size * 30 + "px",
-            height: meteor.size * 2 + "px",
-            left: meteor.x + "%",
-            top: meteor.y + "%",
-            animationDelay: meteor.delay,
-            animationDuration: meteor.animationDuration + "s",
-            position: "absolute",
-          }}
-        />
-      ))}
+     
+
+{isDarkMode &&
+  meteors.map((meteor) => (
+    <div
+      key={meteor.id}
+      className="meteor animate-meteor"
+      style={{
+        width: meteor.size * 30 + "px",
+        height: meteor.size * 2 + "px",
+        left: meteor.x + "%",
+        top: meteor.y + "%",
+        animationDelay: meteor.delay,
+        animationDuration: meteor.animationDuration + "s",
+        position: "absolute",
+      }}
+    />
+  ))}
     </div>
   );
 };

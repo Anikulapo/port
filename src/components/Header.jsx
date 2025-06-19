@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTheme } from "../context/ThemeContext";
 
 const items = [
   {
@@ -29,10 +30,12 @@ const items = [
 ];
 
 const Header = () => {
+  const {isDarkMode} = useTheme()
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+
 
     const handleScroll = () => {
         if (window.scrollY > 10) {
@@ -52,7 +55,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`fixed w-full z-40 transition-all duration-300 px-5
+      className={`fixed w-full z-40 transition-all duration-300 px-1 pr-6 md:pr-10 md:px-5
                 ${
                   isScrolled
                     ? "py-5 bg-background/80 backdrop-blur-md shadow-xs"
@@ -85,14 +88,16 @@ const Header = () => {
 
         {/* mobile nav */}
 
-        <button onClick={handleClick} className="z-100 md:hidden" aria-label={isOpen ? "Close Menu": "Open Menu"}>
+        <button onClick={handleClick} className="z-50 md:hidden ml-10" aria-label={isOpen ? "Close Menu": "Open Menu"}>
           <svg className="w-6 h-6" viewBox="0 0 24 24">
             <line
               x1="3"
               y1="6"
               x2="21"
               y2="6"
-              className={`stroke-white stroke-[3] transition-all duration-300 origin-center ${
+              className={` stroke-[3] transition-all duration-300 origin-center
+                ${isDarkMode? "stroke-white" : "stroke-black"}
+                ${
                 isOpen ? "rotate-45 translate-y-[3px]" : ""
               }`}
             />
@@ -101,7 +106,9 @@ const Header = () => {
               y1="12"
               x2="21"
               y2="12"
-              className={`stroke-white stroke-[3] transition-all duration-300 ${
+              className={` stroke-[3] transition-all duration-300 
+                ${isDarkMode? "stroke-white" : "stroke-black"}
+                ${
                 isOpen ? "opacity-0" : "opacity-100"
               }`}
             />
@@ -110,7 +117,9 @@ const Header = () => {
               y1="18"
               x2="21"
               y2="18"
-              className={`stroke-white stroke-[3] transition-all duration-300 origin-center ${
+              className={` stroke-[3] transition-all duration-300 origin-center 
+                ${isDarkMode? "stroke-white" : "stroke-black"}
+                ${
                 isOpen ? "-rotate-45 -translate-y-[6px]" : ""
               }`}
             />
@@ -118,12 +127,17 @@ const Header = () => {
         </button>
 
         <div
-          className={`
-          fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center
-          transtion-all duration-700 
-          md:hidden space-x-8 ${isOpen? "translate-0  pointer-events-auto": "pointer-events-none translate-y-[-100%]"}`}
+          className={`absolute w-screen h-screen inset-0  backdrop-blur-md z-40 flex justify-center items-center
+            transform duration-700
+            ${
+              isOpen ? "translate-y-[0]" : "translate-y-[-100%]"
+            }
+            ${
+              isScrolled ?  "bg-background" : "bg-background/95"
+            }
+            `}
         >
-          <div className="flex flex-col space-y-8 text-xl">
+          <div className="flex flex-col space-y-8 text-xl w-full">
             {items.map((nav) => (
               <a
                 key={nav.id}
