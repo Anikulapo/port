@@ -36,7 +36,7 @@ const Contacts = () => {
                   <h4 className="font-medium text-lg">Email</h4>
                   <a
                     className="hover:text-primary transition-colors duration-300 text-muted-foreground"
-                    href="mailto:tobialassoadura200@gmail.com"
+                    href="mailto:tobialasoadura200@gmail.com"
                   >
                     tobialassoadura200@gmail.com
                   </a>
@@ -91,7 +91,7 @@ const Contacts = () => {
 
             <div className="space-y-6 w-full flex justify-center items-center mt-6">
               <button className=" cosmic-button px-10 py-4 transition-colors duration-300 flex items-center justify-center cursor-pointer">
-                <a href="mailto:tobialassoadura200@gmail.com">Let's Get In Touch</a>
+                <a href="mailto:tobialasoadura200@gmail.com">Let's Get In Touch</a>
               </button>
             </div>
           </div>
