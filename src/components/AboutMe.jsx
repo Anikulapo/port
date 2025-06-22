@@ -34,7 +34,7 @@ const AboutMe = () => {
                 Get In Touch
               </a>
               <a
-              target="_blank"
+                target="_blank"
                 href="https://drive.google.com/file/d/1ncwiJshdqv7LRZfbhpl2_resdocCdARY/view?usp=sharing"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
@@ -43,7 +43,7 @@ const AboutMe = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6">
-             <div className="gradient-border p-6 card-hover">
+            <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Code className="h-6 w-6 text-primary" />
@@ -57,7 +57,7 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
@@ -66,7 +66,8 @@ const AboutMe = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
                   <p className="text-muted-foreground">
-                    I take projects from idea to launch, keeping things structured with agile methods.
+                    I take projects from idea to launch, staying focused with a
+                    flexible, feedback-driven approach to managing progress.
                   </p>
                 </div>
               </div>
