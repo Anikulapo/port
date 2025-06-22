@@ -66,7 +66,7 @@ const AboutMe = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
                   <p className="text-muted-foreground">
-                    Leading Projects from conception to completion with agile metholgies
+                    I take projects from idea to launch, keeping things structured with agile methods.
                   </p>
                 </div>
               </div>
