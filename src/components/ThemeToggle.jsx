@@ -24,10 +24,10 @@ const ThemeToggle = () => {
     <>
       <button
         onClick={toggleTheme}
-        className={`fixed max-sm:hidden 
-      top-5 right-5 md:right-2  z-50 p-2 rounded-full 
+        className={`relative max-sm:hidden 
+     z-50  rounded-full 
       transition-colors duration-300 focus:outline-hidden cursor-pointer
-      ${isScrolled ? "md:top-4" : "md:top-6"}
+
       `}
       >
         {isDarkMode ? (

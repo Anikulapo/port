@@ -26,9 +26,9 @@ const Contacts = () => {
         <div className="grid grid-cols-1 gap-12">
           <div className="space-y-8 flex flex-col justify-center items-center ">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-            <div className="space-y-6 justify-center items-center flex flex-col">
+            <div className="gap-6 justify-center items-center flex flex-col lg:flex-row  max-w-full ">
               {/* Email Contact */}
-              <div className="flex   items-start justify-start space-x-4 w-sm px-15">
+              <div className="flex   items-start justify-start space-x-4 w-sm px-15 lg:px-0">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
@@ -45,7 +45,7 @@ const Contacts = () => {
               </div>
 
               {/* Telephone Number */}
-              <div className="flex   items-start justify-start space-x-4 w-sm px-15">
+              <div className="flex   items-start justify-start space-x-4 w-sm px-15  md:pt-2 lg:pl-15">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
@@ -62,7 +62,7 @@ const Contacts = () => {
               </div>
 
               {/* Location */}
-              <div className="flex   items-start justify-start space-x-4 w-sm px-15">
+              <div className="flex   items-start justify-start space-x-4 w-sm px-15 xl:pl-20 lg:px-0">
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
@@ -75,7 +75,10 @@ const Contacts = () => {
                 </div>
               </div>
 
-              <div className="pt-8">
+              
+            </div>
+
+            <div className="pt-8">
                 <h4>Connect With Me</h4>
                 <div className="flex space-x-4 justify-center pt-4">
                   <a href="https://www.linkedin.com/in/oluwatobi-alasoadura-699aa21b6/" target="_blank">
@@ -86,11 +89,10 @@ const Contacts = () => {
                   </a>
                 </div>
               </div>
-            </div>
 
 
             <div className="space-y-6 w-full flex justify-center items-center mt-6">
-              <button className=" cosmic-button px-10 py-4 transition-colors duration-300 flex items-center justify-center cursor-pointer">
+              <button className=" cosmic-button px-10 py-4 transition-all duration-500 flex items-center justify-center cursor-pointer">
                 <a href="mailto:tobialasoadura200@gmail.com">Let's Get In Touch</a>
               </button>
             </div>

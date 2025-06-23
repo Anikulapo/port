@@ -99,10 +99,10 @@ const Projects = () => {
         <div className="text-center mt-12">
           <a
             href="https://github.com/Anikulapo"
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            className="cosmic-button w-fit flex items-center justify-center mx-auto gap-1 px-6 py-2 transition-all duration-300 group"
             target="_blank"
           >
-            Check My Github <ArrowRight size={16} />
+            Check My Github <ArrowRight className="group-hover:translate-x-1 duration-500   transform" size={16} />
           </a>
         </div>
       </div>
