@@ -28,7 +28,7 @@ const Contacts = () => {
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="gap-6 justify-center items-center flex flex-col lg:flex-row  max-w-full ">
               {/* Email Contact */}
-              <div className="flex   items-start justify-start space-x-4 w-sm px-15 lg:px-0">
+              <div className="flex   items-start justify-start space-x-4 w-sm px-15 lg:px-0 lg:pl-7">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
@@ -45,7 +45,7 @@ const Contacts = () => {
               </div>
 
               {/* Telephone Number */}
-              <div className="flex   items-start justify-start space-x-4 w-sm px-15  md:pt-2 lg:pl-15">
+              <div className="flex   items-start justify-start space-x-4 w-sm px-15 lg:pr-0 md:pt-2 lg:pl-10">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
@@ -62,7 +62,7 @@ const Contacts = () => {
               </div>
 
               {/* Location */}
-              <div className="flex   items-start justify-start space-x-4 w-sm px-15 xl:pl-20 lg:px-0">
+              <div className="flex   items-start justify-start space-x-4 w-sm px-15 xl:pl-20 lg:pr-0 lg:pl-10">
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
