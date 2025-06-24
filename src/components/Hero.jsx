@@ -25,7 +25,7 @@ const Hero = () => {
           performance and accessibility
         </p>
 
-        <div className="opacity-0 animate-fade-in-delay-3 pt-4">
+        <div className="opacity-0 animate-fade-in-delay-3 pt-8">
           <a href="#projects" className="cosmic-button">
             View My Work
           </a>
