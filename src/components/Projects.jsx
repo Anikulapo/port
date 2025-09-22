@@ -35,6 +35,17 @@ const projects = [
       "A modern, responsive landing page template with smooth user-centric interactions.",
     tags: ["HTML & CSS", "JavaScript"],
   },
+  {
+    id: 4,
+    img: "/images/mini.png",
+    category: "Ecommerce",
+    subCategory: "Shop",
+    link: "https://mini-commerce-bay-delta.vercel.app/",
+    title: "Mini Commerce",
+    description:
+      "A minimal, responsive e-commerce storefront for clothing with category navigation, search and cart UI good for a small online shop demo.",
+    tags: ["Next Js","TypeScript","Zustand","TanStack Query","Tailwind CSS"],
+  },
 ];
 
 const Projects = () => {
@@ -102,7 +113,11 @@ const Projects = () => {
             className="cosmic-button w-fit flex items-center justify-center mx-auto gap-1 px-6 py-2 transition-all duration-300 group"
             target="_blank"
           >
-            Check My Github <ArrowRight className="group-hover:translate-x-1 duration-500   transform" size={16} />
+            Check My Github{" "}
+            <ArrowRight
+              className="group-hover:translate-x-1 duration-500   transform"
+              size={16}
+            />
           </a>
         </div>
       </div>

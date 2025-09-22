@@ -1,6 +1,6 @@
 
 import StarBackground from "../components/Starbackground.jsx";
-import Header from "../components/Header.jsx";
+import Header from "../components/header.jsx";
 import Hero from "../components/Hero.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import Skills from "../components/Skills.jsx";
