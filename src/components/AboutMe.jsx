@@ -35,7 +35,7 @@ const AboutMe = () => {
               </a>
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1ncwiJshdqv7LRZfbhpl2_resdocCdARY/view?usp=sharing"
+                href="https://drive.google.com/file/d/1rCsi_ufKprhw6n3BBW4T2DIvapR5Aful/view?usp=sharing"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
