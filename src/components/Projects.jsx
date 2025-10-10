@@ -46,6 +46,18 @@ const projects = [
       "A minimal, responsive e-commerce storefront for clothing with category navigation, search and cart UI good for a small online shop demo.",
     tags: ["Next Js","TypeScript","Zustand","TanStack Query","Tailwind CSS"],
   },
+  {
+  id: 5,
+  img: "/images/mojito.png",
+  category: "All",
+  subCategory: "Personal ",
+  link: "https://mojito-gules.vercel.app/",
+  title: "Mojito",
+  description:
+    "An interactive web app / landing demo with smooth UI and modern responsiveness, designed to present features or a product experience.",
+  tags: ["React", "TypeScript", "Tailwind CSS", "GSAP", ],
+}
+
 ];
 
 const Projects = () => {
