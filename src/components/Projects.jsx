@@ -56,7 +56,18 @@ const projects = [
   description:
     "An interactive web app / landing demo with smooth UI and modern responsiveness, designed to present features or a product experience.",
   tags: ["React", "TypeScript", "Tailwind CSS", "GSAP", ],
+},
+{
+  "id": 6,
+  "img": "/images/cart.png",
+  "category": "All",
+  "subCategory": "Web App",
+  "link": "https://carto-demo.vercel.app/",
+  "title": "Carto Demo",
+  "description": "A modern, interactive web interface showcasing AI-powered creative tools with smooth UI and responsive design.",
+  "tags": ["Next", "TypeScript", "Tailwind CSS", "GSAP"]
 }
+
 
 ];
 
