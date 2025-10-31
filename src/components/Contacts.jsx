@@ -81,7 +81,7 @@ const Contacts = () => {
             <div className="pt-8">
                 <h4>Connect With Me</h4>
                 <div className="flex space-x-4 justify-center pt-4">
-                  <a href="https://www.linkedin.com/in/oluwatobi-alasoadura-699aa21b6/" target="_blank">
+                  <a href="https://www.linkedin.com/in/oluwatobiloba-alasoadura-699aa21b6/" target="_blank">
                     <Linkedin />
                   </a>
                   <a href="https://x.com/Greatalash1" target="_blank">
