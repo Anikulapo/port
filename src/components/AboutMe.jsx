@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, Code2 } from "lucide-react";
 
 const AboutMe = () => {
   return (
@@ -43,31 +43,61 @@ const AboutMe = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6">
+            {/* Web Development */}
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web Development</h4>
+                  <h4 className="font-semibold text-lg">
+                    Frontend Development
+                  </h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks
+                    I build fast, responsive, and user-friendly web interfaces
+                    using modern technologies like React, Next.js, Tailwind CSS,
+                    and TypeScript. I focus on creating smooth user experiences
+                    and clean, maintainable code.
                   </p>
                 </div>
               </div>
             </div>
 
+            {/* Project Management */}
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <h4 className="font-semibold text-lg">
+                    Project Collaboration
+                  </h4>
                   <p className="text-muted-foreground">
-                    I take projects from idea to launch, staying focused with a
-                    flexible, feedback-driven approach to managing progress.
+                    I work efficiently within teams using Git and agile
+                    workflows, managing tasks from planning to deployment while
+                    maintaining clear communication and adaptability through
+                    feedback-driven iterations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Additional Skill */}
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Code2 className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">
+                    State & API Integration
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Skilled in using tools like Redux Toolkit, Zustand, and
+                    TanStack Query for efficient state management and seamless
+                    API integration to deliver dynamic, data-driven
+                    applications.
                   </p>
                 </div>
               </div>
