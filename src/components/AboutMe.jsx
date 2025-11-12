@@ -42,7 +42,7 @@ const AboutMe = () => {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-4 pt-2">
             {/* Web Development */}
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
