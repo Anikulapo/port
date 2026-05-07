@@ -67,27 +67,39 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
+    --background: 210 20% 98%;
     --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
 
-    --primary: 250 47% 60%;
+    --primary: 250 50% 50%;
     --primary-foreground: 210 40% 98%;
+    
+    --secondary: 210 20% 90%;
+    --secondary-foreground: 222 47% 11%;
+    
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 16% 47%;
 
     --border: 214 32% 91%;
   }
 
   .dark {
-    --background: 222 47% 4%;
+    --background: 224 71% 4%;
     --foreground: 213 31% 91%;
 
-    --card: 222 47% 8%;
+    --card: 224 71% 6%;
 
-    --primary: 250 65% 65%;
+    --primary: 250 80% 65%;
     --primary-foreground: 213 31% 91%;
+    
+    --secondary: 224 71% 10%;
+    --secondary-foreground: 213 31% 91%;
+    
+    --muted: 224 71% 10%;
+    --muted-foreground: 215 20% 65%;
 
-    --border: 217 33% 20%;
+    --border: 224 71% 14%;
   }
 
   * {
@@ -96,6 +108,7 @@
 
   html {
     scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
   }
 
   body {
@@ -103,6 +116,9 @@
     color: hsl(var(--foreground));
     transition: background-color 300ms, color 300ms;
     font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
