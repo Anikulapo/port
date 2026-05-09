@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useTheme } from "../context/ThemeContext.jsx";
+// import { useTheme } from "../context/ThemeContext.jsx";
 import ThemeToggle from "./ThemeToggle.jsx";
 
 const items = [
@@ -11,7 +11,7 @@ const items = [
 ];
 
 const Header = () => {
-  const { isDarkMode } = useTheme();
+  // const { isDarkMode } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
