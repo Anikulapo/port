@@ -105,7 +105,7 @@ const AboutMe = () => {
               <a href="#contact" className="cosmic-button">
                 Get In Touch
               </a>
-              <a href="https://drive.google.com/file/d/11TtP_ApYHjzp-Q8OhGNlBUQHfrCG7sJ9/view?usp=sharing" target="blank" download className="cosmic-button">
+              <a href="https://drive.google.com/file/d/1qylbTYrsW5xt7AR376uuAqWjFGtQ8hwY/view?usp=sharing" target="blank" download className="cosmic-button">
                 Download Resume
               </a>
             </div>
