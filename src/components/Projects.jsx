@@ -15,23 +15,23 @@ const projects = [
   },
   {
     id: 2,
-    img: "/images/ecom.png", // Reusing image
+    img: "/images/ecom.png",
     category: "Frontend",
     link: "https://crymsum.vercel.app/",
-    title: "Developer Portfolio",
+    title: "Crymsum Ecommerce Platform",
     description:
-      "A responsive, animated portfolio showcasing technical skills and engineering projects with a focus on modern UI/UX principles.",
-    tags: ["React.js", "Tailwind CSS", "Vite", "GSAP"],
+      "Developed a modern ecommerce application with seamless product browsing, cart management, secure Paystack payment integration, and scalable state management using Redux for a smooth shopping experience.",
+    tags: ["React.js", "Redux Toolkit", "Paystack", "Tailwind CSS", "Vite"],
   },
   {
     id: 3,
-    img: "/images/mojito.png", // Reusing image as placeholder for backend
+    img: "/images/mojito.png",
     category: "Frontend",
-    link: "#",
-    title: "Scalable Backend Systems",
+    link: "https://mojito-gules.vercel.app/",
+    title: "Mojito Cocktail Experience",
     description:
-      "Engineered URL shortener and marketplace backend architectures focusing on REST APIs, complex CRUD functionality, and scalable patterns.",
-    tags: ["Python", "Django", "Flask", "PostgreSQL", "REST API"],
+      "Developed a sleek and immersive cocktail-themed frontend experience with modern UI animations, responsive layouts, smooth transitions, and interactive components focused on delivering a premium user experience.",
+    tags: ["React", "Tailwind CSS", "JavaScript", "GSAP"],
   },
   {
     id: 4,
@@ -53,6 +53,16 @@ const projects = [
       "An interactive web interface showcasing creative tools with smooth UI, fluid animations, and responsive design.",
     tags: ["Next.js", "TypeScript", "Tailwind", "GSAP"],
   },
+  {
+  id: 6,
+  img: "/images/scoot.png",
+  category: "Frontend",
+  link: "https://scoot-liart.vercel.app/",
+  title: "Scoot Landing Page",
+  description:
+    "A modern scooter-sharing website built to showcase clean layouts, responsive design, and polished frontend structure.",
+  tags: ["React", "Tailwind CSS"],
+},
 ];
 
 const Projects = () => {
