@@ -27,6 +27,16 @@ const experiences = [
   },
 
   {
+    role: "Back End Development Intern",
+    company: "The Crow’s Agribusiness Consult Ltd.",
+    date: "01/2026 – 03/2026",
+    domain: "Agritech Backend",
+    points: [
+      "Designed and implemented backend services using Django and Flask.",
+      "Developed RESTful APIs and relational database models for business applications.",
+    ],
+  },
+  {
     role: "Frontend Development Intern",
     company: "Crop2Cash",
     date: "03/2025 – 05/2025",
