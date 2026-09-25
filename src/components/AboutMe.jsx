@@ -136,14 +136,17 @@ const AboutMe = () => {
             </div>
 
             <div className="about-animate pt-2 flex flex-col sm:flex-row gap-4">
-              <a href="#contact" className="cosmic-button text-center">
+              <a 
+                href="#contact" 
+                className="cosmic-button inline-flex items-center justify-center text-center shadow-lg shadow-primary/20"
+              >
                 Get In Touch
               </a>
               <a 
                 href="https://drive.google.com/file/d/1qylbTYrsW5xt7AR376uuAqWjFGtQ8hwY/view?usp=sharing" 
                 target="_blank" 
                 rel="noreferrer" 
-                className="px-6 py-3 rounded-full border border-border/80 text-foreground font-medium hover:border-primary hover:text-primary transition-all duration-300 text-center bg-card/50"
+                className="px-6 py-3 rounded-full border border-border/80 text-foreground font-medium hover:border-primary hover:text-primary transition-all duration-300 text-center bg-card/50 inline-flex items-center justify-center"
               >
                 View Full Resume
               </a>

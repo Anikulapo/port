@@ -44,17 +44,7 @@ const projects = [
     tags: ["React", "Django", "PostgreSQL", "REST API", "URL Shortener"],
   },
   {
-    id: 5,
-    img: "/images/cart.png",
-    category: "Frontend",
-    link: "https://carto-demo.vercel.app/",
-    title: "Carto UI Demo",
-    description:
-      "An interactive web interface showcasing creative tools with smooth UI, fluid animations, and responsive design.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "GSAP"],
-  },
-  {
-  id: 6,
+  id: 5,
   img: "/images/scoot.png",
   category: "Frontend",
   link: "https://scoot-liart.vercel.app/",
