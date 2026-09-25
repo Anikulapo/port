@@ -38,7 +38,7 @@ const Contacts = () => {
                     className="hover:text-primary transition-colors duration-300 text-muted-foreground"
                     href="mailto:tobialasoadura200@gmail.com"
                   >
-                    tobialassoadura200@gmail.com
+                    tobialasoadura200@gmail.com
                   </a>
                   <p className="text-muted-foreground"></p>
                 </div>

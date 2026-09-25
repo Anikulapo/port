@@ -2,9 +2,38 @@ import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const skillsData = {
-  frontend: ["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "GSAP"],
-  backend: ["Python", "Django", "Flask", "SQL", "PostgreSQL", "MySQL"],
-  tools: ["Redux Toolkit", "Zustand", "TanStack Query", "Git", "Postman", "Vercel"],
+  frontend: [
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Angular",
+    "Tailwind CSS",
+    "HTML5",
+    "CSS3",
+    "GSAP",
+  ],
+  backend: [
+    "NestJS",
+    "Django",
+    "Django REST (DRF)",
+    "Express.js",
+    "Flask",
+    "Python",
+    "SQL",
+    "PostgreSQL",
+    "MySQL",
+  ],
+  tools: [
+    "Redux Toolkit",
+    "Zustand",
+    "TanStack Query",
+    "Zod",
+    "Axios",
+    "Git",
+    "Postman",
+    "Vercel",
+  ],
 };
 
 const categories = [
@@ -94,7 +123,7 @@ const Skills = () => {
               key={`${skill.name}-${idx}`}
               className="skill-card flex items-center justify-center p-4 rounded-xl bg-card border border-border/50 shadow-sm hover:border-primary/50 hover:shadow-md hover:-translate-y-1 transition-all duration-300 group"
             >
-              <span className="font-semibold text-foreground/80 group-hover:text-primary transition-colors">
+              <span className="font-semibold text-foreground/80 group-hover:text-primary transition-colors text-center">
                 {skill.name}
               </span>
             </div>

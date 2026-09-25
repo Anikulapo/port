@@ -3,31 +3,37 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const experiences = [
-   {
-    role: "Frontend Development Intern",
-    company: "Crop2Cash",
-    date: "2025",
-    points: [
-      "Developed production-ready UI components using React.js and Tailwind CSS",
-      "Collaborated in debugging and improving application stability",
-    ],
-  },
-  {
+    {
     role: "Frontend Engineer",
     company: "Bito Corp",
-    date: "2025 – Present",
+    date: "12/2025 – Present",
+    domain: "Enterprise Platforms",
     points: [
-      "Engineered scalable frontend applications and internal systems",
-      "Contributed to invoicing, analytics, and learning management platforms",
+      "Architected and deployed responsive internal systems including invoicing workflows and learning management systems (LMS).",
+      "Engineered reusable component systems in React, Next.js, and TypeScript, translating complex client business rules into fluid UX.",
+      "Optimized client-side state and caching workflows to streamline operational productivity and overall company performance.",
     ],
   },
   {
-    role: "Backend Developer Intern",
-    company: "The Crow’s Agribusiness Consult Ltd.",
-    date: "2026",
+    role: "Software Engineer Intern",
+    company: "WithHalal",
+    date: "07/2026 – Present",
+    domain: "Backend & Systems",
     points: [
-      "Built backend services using Django and Flask",
-      "Designed RESTful APIs and relational database models",
+      "Worked on backend auditing microservices using NestJS, Express, and TypeScript to track and verify business financial activity.",
+      "Identified and resolved system-level bottlenecks, enhancing backend reliability, error handling, and transactional logging.",
+      "Collaborated on application architecture and relational database models to implement scalable API fixes and features.",
+    ],
+  },
+
+  {
+    role: "Frontend Development Intern",
+    company: "Crop2Cash",
+    date: "03/2025 – 05/2025",
+    domain: "Agritech UI/UX",
+    points: [
+      "Developed production-ready, accessible UI components using React.js and Tailwind CSS.",
+      "Collaborated closely with QA and engineering peers on debugging, testing, and improving core application stability.",
     ],
   },
 ];
@@ -68,79 +74,108 @@ const AboutMe = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          {/* Left Column: Summary & Leadership */}
+          {/* Left Column: Summary, Education & Leadership */}
           <div className="lg:col-span-5 space-y-8">
             <div className="about-animate space-y-4">
               <h3 className="text-2xl font-semibold flex items-center gap-2">
-                <Code className="text-primary" /> Professional Summary
+                <Code className="text-primary" /> Engineering Philosophy
               </h3>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                Frontend-Focused Fullstack Software Engineer skilled in React.js, Next.js, 
-                TypeScript, Django, and Flask. I have a proven track record of building 
-                scalable web applications and robust internal systems that solve complex 
-                business challenges.
+              <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                I am a Software Engineer driven by the intersection of rigorous backend architecture and fluid, responsive user interfaces. 
+                With hands-on experience delivering enterprise internal platforms at Bito Corp and financial auditing systems at WithHalal, 
+                I specialize in <span className="text-foreground font-medium">TypeScript, React/Next.js, NestJS, and Django</span> to engineer maintainable, high-impact systems.
               </p>
             </div>
 
-            <div className="about-animate space-y-4 pt-4">
-              <h3 className="text-2xl font-semibold flex items-center gap-2">
-                <Award className="text-primary" /> Leadership
+            {/* Education Card */}
+            <div className="about-animate space-y-3">
+              <h3 className="text-xl font-semibold flex items-center gap-2">
+                <Award className="text-primary" /> Education
               </h3>
-              <div className="gradient-border p-6 rounded-xl bg-card/50">
-                <h4 className="font-semibold text-lg">NACOS SRC</h4>
-                <ul className="mt-3 space-y-2 text-muted-foreground">
+              <div className="p-5 rounded-xl border border-border/70 bg-card/60 backdrop-blur-sm">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h4 className="font-semibold text-foreground">Bachelor of Computer Science</h4>
+                    <p className="text-sm text-primary font-medium mt-0.5">University of Ibadan</p>
+                  </div>
+                  <span className="text-xs px-2.5 py-1 bg-secondary text-secondary-foreground rounded-full">
+                    2023 – Present
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Leadership Card */}
+            <div className="about-animate space-y-3">
+              <h3 className="text-xl font-semibold flex items-center gap-2">
+                <Award className="text-primary" /> Leadership & Activities
+              </h3>
+              <div className="p-5 rounded-xl border border-border/70 bg-card/60 backdrop-blur-sm">
+                <h4 className="font-semibold text-foreground">NACOS Student Representative Council</h4>
+                <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                    Chief Whip (2024/2025)
+                    <span><strong className="text-foreground">Chief Whip</strong> (2024 / 2025)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                    Deputy Chief Whip (2023/2024)
+                    <span><strong className="text-foreground">Deputy Chief Whip</strong> (2023 / 2024)</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="about-animate pt-4 flex flex-col md:flex-row  gap-4">
-              <a href="#contact" className="cosmic-button">
+            <div className="about-animate pt-2 flex flex-col sm:flex-row gap-4">
+              <a href="#contact" className="cosmic-button text-center">
                 Get In Touch
               </a>
-              <a href="https://drive.google.com/file/d/1qylbTYrsW5xt7AR376uuAqWjFGtQ8hwY/view?usp=sharing" target="blank" download className="cosmic-button">
-                Download Resume
+              <a 
+                href="https://drive.google.com/file/d/1qylbTYrsW5xt7AR376uuAqWjFGtQ8hwY/view?usp=sharing" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="px-6 py-3 rounded-full border border-border/80 text-foreground font-medium hover:border-primary hover:text-primary transition-all duration-300 text-center bg-card/50"
+              >
+                View Full Resume
               </a>
             </div>
-
-            
           </div>
 
           {/* Right Column: Experience Timeline */}
           <div className="lg:col-span-7">
             <div className="about-animate mb-6">
               <h3 className="text-2xl font-semibold flex items-center gap-2">
-                <Briefcase className="text-primary" /> Experience
+                <Briefcase className="text-primary" /> Technical Experience
               </h3>
             </div>
             
-            <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
+            <div className="space-y-6 relative before:absolute before:inset-0 before:left-5 before:-translate-x-px md:before:left-5 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-primary/60 before:via-border before:to-transparent">
               {experiences.map((exp, idx) => (
-                <div key={idx} className="about-animate relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-background bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                <div key={idx} className="about-animate relative flex items-start gap-4 sm:gap-6 group">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-background bg-primary text-white shadow-md shrink-0 z-10">
                     <Briefcase size={16} />
                   </div>
                   
-                  <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl border border-border bg-card shadow-sm transition-all hover:border-primary/50 hover:shadow-md">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
-                      <h4 className="font-bold text-lg">{exp.role}</h4>
+                  <div className="flex-1 p-6 rounded-xl border border-border/70 bg-card/80 shadow-sm transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-0.5">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                      <h4 className="font-bold text-lg text-foreground">{exp.role}</h4>
                       <span className="text-xs font-medium px-2.5 py-1 bg-secondary text-secondary-foreground rounded-full flex items-center gap-1 w-fit">
                         <Calendar size={12} />
                         {exp.date}
                       </span>
                     </div>
-                    <p className="text-primary font-medium mb-3">{exp.company}</p>
-                    <ul className="space-y-2">
+
+                    <div className="flex items-center gap-2 mb-3">
+                      <p className="text-primary font-semibold">{exp.company}</p>
+                      <span className="text-xs text-muted-foreground">•</span>
+                      <span className="text-xs font-medium px-2 py-0.5 rounded bg-primary/10 text-primary border border-primary/20">
+                        {exp.domain}
+                      </span>
+                    </div>
+
+                    <ul className="space-y-2.5">
                       {exp.points.map((point, i) => (
-                        <li key={i} className="text-muted-foreground text-sm flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
+                        <li key={i} className="text-muted-foreground text-sm flex items-start gap-2.5 leading-relaxed">
+                          <span className="text-primary mt-1 select-none font-bold">›</span>
                           <span>{point}</span>
                         </li>
                       ))}
