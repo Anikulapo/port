@@ -143,7 +143,7 @@ const AboutMe = () => {
                 Get In Touch
               </a>
               <a 
-                href="https://drive.google.com/file/d/1qylbTYrsW5xt7AR376uuAqWjFGtQ8hwY/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1Y5FZsBw5q-KJGMJ0IMEw2oARtuZeyPVP/view?usp=sharing" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="px-6 py-3 rounded-full border border-border/80 text-foreground font-medium hover:border-primary hover:text-primary transition-all duration-300 text-center bg-card/50 inline-flex items-center justify-center"
